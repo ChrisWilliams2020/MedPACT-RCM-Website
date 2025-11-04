@@ -11,6 +11,13 @@ module.exports = {
   plugins: [],
 }
 
-import { Button } from "../components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
-import { Badge } from "../components/ui/badge";
+import { Button } from "./components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "./components/ui/card";
+import { Badge } from "./components/ui/badge";
+import { motion } from "framer-motion";
+
+const MotionH1 = motion('h1');
+const MotionDiv = motion('div');
+
+<MotionH1 className="..." {...motionProps}>...</MotionH1>
+<MotionDiv className="..." {...motionProps}>...</MotionDiv>
