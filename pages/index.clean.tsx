@@ -13,7 +13,7 @@ import { Check, BarChart3, ShieldCheck, Mic, Cpu, DollarSign, Activity, ArrowRig
 
 export default function MedPactRCMLanding() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 text-slate-900 dark:text-slate-100">
+    <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900 text-slate-900 dark:text-slate-100">
       {/* Top Announcement */}
       <div className="w-full bg-gradient-to-r from-cyan-600 to-emerald-600 text-white text-center text-sm py-2">CONFIDENTIAL & BUSINESS RESTRICTED</div>
 
@@ -23,6 +23,19 @@ export default function MedPactRCMLanding() {
           <div className="flex items-center gap-3">
             <div className="h-8 w-8 rounded-full bg-gradient-to-br from-cyan-500 to-emerald-500" />
             <span className="font-bold text-lg tracking-tight">MedPact <span className="text-slate-500">RCM</span></span>
+          </div>
+          <div className="hidden md:flex items-center gap-2">
+            {[
+              { href: "#solution", label: "Solution" },
+              { href: "#platform", label: "Platform" },
+              { href: "#outcomes", label: "Outcomes" },
+              { href: "#innovations", label: "Innovations" },
+              { href: "#collab", label: "Provider↔Payer" },
+              { href: "#mission", label: "Mission" },
+              { href: "#contact", label: "Contact" },
+            ].map((l) => (
+              <a key={l.href} href={l.href} className="px-3 py-2 rounded-full text-sm font-medium bg-black text-white hover:opacity-90 transition">{l.label}</a>
+            ))}
           </div>
           <div className="flex items-center gap-2">
             <Button className="rounded-2xl px-4 py-2 font-semibold bg-gradient-to-r from-cyan-600 to-emerald-600">
@@ -49,11 +62,9 @@ export default function MedPactRCMLanding() {
               <Badge className="bg-slate-800">JWT Security</Badge>
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="/book-demo">
-                <Button size="lg" className="rounded-2xl px-6 py-6 text-base font-bold bg-gradient-to-r from-cyan-600 to-emerald-600">
-                  Get a Live Demo <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </a>
+              <Button size="lg" className="rounded-2xl px-6 py-6 text-base font-bold bg-gradient-to-r from-cyan-600 to-emerald-600">
+                Get a Live Demo <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
               <Button size="lg" variant="outline" className="rounded-2xl px-6 py-6 text-base font-bold border-slate-300">
                 Download One-Pager
               </Button>
@@ -92,12 +103,12 @@ export default function MedPactRCMLanding() {
             {/* Column A */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {[
-                { href: "/mission", label: "Mission" },
-                { href: "/platform", label: "Platform" },
-                { href: "/outcomes", label: "Outcomes" },
-                { href: "/innovations", label: "Innovations" },
-                { href: "/payer-provider", label: "Provider↔Payer" },
-                { href: "/about", label: "About Us" },
+                { href: "#solution", label: "Mission" },
+                { href: "#platform", label: "Platform" },
+                { href: "#outcomes", label: "Outcomes" },
+                { href: "#innovations", label: "Innovations" },
+                { href: "#collab", label: "Provider↔Payer" },
+                { href: "#about", label: "About Us" },
               ].map((b, i) => (
                 <a key={i} href={b.href} className="px-4 py-3 rounded-2xl text-sm font-semibold bg-black text-white text-center hover:opacity-90 transition">{b.label}</a>
               ))}
@@ -105,9 +116,9 @@ export default function MedPactRCMLanding() {
             {/* Column B */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {[
-                { href: "/contact", label: "Contact" },
-                { href: "/become-user", label: "Become a User" },
-                { href: "/become-partner", label: "Become a Partner" },
+                { href: "#contact", label: "Contact" },
+                { href: "#user", label: "Become a User" },
+                { href: "#partner", label: "Become a Partner" },
               ].map((b, i) => (
                 <a key={i} href={b.href} className="px-4 py-3 rounded-2xl text-sm font-semibold bg-gradient-to-r from-cyan-600 to-emerald-600 text-white text-center hover:opacity-90 transition">{b.label}</a>
               ))}
