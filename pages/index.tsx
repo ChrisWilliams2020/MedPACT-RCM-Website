@@ -37,11 +37,12 @@ export default function MedPactRCMLanding() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Revenue Cycle, Reimagined:
-              <span className="block bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 to-emerald-600"> Voice + AI Automation</span>
+              Fix Execution Where Private Equity Struggled:
+              <span className="block bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 to-emerald-600"> Turn Data Into Action</span>
             </h1>
             <p className="mt-5 text-lg text-slate-600 dark:text-slate-300 max-w-xl">
-              Eliminate manual billing, reduce denials, and negotiate stronger payer contracts with MedPact's unified, voice-first RCM platform.
+              Healthcare practices lose profitability to payment leakage, labor inefficiency, and disconnected data. 
+              MedPact fixes execution — delivering up to 30% profitability improvement over 3 years.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Badge className="bg-cyan-600">HIPAA-ready</Badge>
@@ -58,17 +59,17 @@ export default function MedPactRCMLanding() {
                 Download One-Pager
               </Button>
             </div>
-            <p className="mt-4 text-base font-semibold">"Profitability without distraction, <span className="tracking-wide">WE ARE LISTENING.</span>"</p>
-            <p className="mt-2 text-sm text-slate-500">Doctors shouldn't look away from patients to justify a billing code. We fix that.</p>
+            <p className="mt-4 text-base font-semibold">"Private equity scaled ownership — but struggled to scale execution. MedPact fixes that."</p>
+            <p className="mt-2 text-sm text-slate-500">We turn complex operational and financial data into action across payment yield, labor productivity, payer strategy, and capacity utilization. Not reports — results.</p>
           </div>
           <div className="relative">
             <div className="rounded-3xl border border-slate-200 dark:border-slate-800 p-6 bg-white/70 dark:bg-slate-900/70 shadow-xl">
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { icon: DollarSign, title: "Billing Automation", copy: "AI coding, claims, and denials." },
-                  { icon: BarChart3, title: "Financial Analytics", copy: "Predictive payer & cash flow." },
-                  { icon: ShieldCheck, title: "Credentialing", copy: "98.7% success in 3.2 days." },
-                  { icon: Mic, title: "Voice Workflows", copy: "Ambient documentation to FHIR." },
+                  { icon: DollarSign, title: "Price Transparency", copy: "Real-time CMS-compliant pricing & estimates." },
+                  { icon: BarChart3, title: "RCM Analytics", copy: "Real-time KPIs, payer performance, margins." },
+                  { icon: ShieldCheck, title: "Compliance Layer", copy: "CMS, HIPAA audit-ready, always-on." },
+                  { icon: Cpu, title: "Workflow Automation", copy: "Rules-driven follow-ups & task orchestration." },
                 ].map((f) => (
                   <Card key={f.title} className="rounded-2xl">
                     <CardHeader className="pb-1">
@@ -126,10 +127,10 @@ export default function MedPactRCMLanding() {
             <CardContent className="text-slate-600 dark:text-slate-300">
               <ul className="space-y-3">
                 {[
-                  "Manual data entry and fragmented systems",
-                  "High denial rates and delayed reimbursements",
-                  "Limited payer visibility and weak contract leverage",
-                  "Physician distraction from clinical care",
+                  "Payment leakage from inaccurate coding and missed charges",
+                  "Labor inefficiency — staff buried in manual processes",
+                  "Disconnected data — payment accuracy, productivity, infrastructure don't talk",
+                  "Private equity scaled ownership but struggled to scale execution",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3"><Activity className="h-5 w-5 mt-0.5 text-cyan-600" /> {item}</li>
                 ))}
@@ -143,10 +144,10 @@ export default function MedPactRCMLanding() {
             <CardContent className="text-slate-600 dark:text-slate-300">
               <ul className="space-y-3">
                 {[
-                  "Voice-first clinical and back-office workflows (ambient → structured data)",
-                  "Automated coding, claim scrubbing, and denial prevention",
-                  "Economic-healthcare correlation for smarter pricing & negotiations",
-                  "Unified platform with real-time analytics and audit trails",
+                  "Turn data into action across payment yield, labor productivity, payer strategy",
+                  "Fix payment leakage with AI-assisted coding and charge capture",
+                  "Eliminate labor inefficiency through workflow automation",
+                  "Connect operational and financial data into one intelligence layer",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3"><Check className="h-5 w-5 mt-0.5 text-emerald-600" /> {item}</li>
                 ))}

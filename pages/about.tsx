@@ -1,15 +1,18 @@
 import PublicHeader from "../components/PublicHeader";
 import PublicFooter from "../components/PublicFooter";
+import ImageUpload from "../components/ImageUpload";
 
 type Leader = {
   name: string;
   title: string;
   bio: string;
+  id: string;
 };
 
 type Advisor = {
   name: string;
   bio: string;
+  id: string;
 };
 
 const leadership: Leader[] = [
@@ -17,36 +20,43 @@ const leadership: Leader[] = [
     name: "Dr. Christopher Williams",
     title: "Founder & CEO",
     bio: "Dr. Williams is a practicing ophthalmologist, entrepreneur, and the visionary behind MedPACT. His clinical background and operational insight drive MedPACT's mission to modernize the financial infrastructure of healthcare.",
+    id: "christopher-williams",
   },
   {
     name: "Dave Davis",
     title: "Chief Operating Officer",
     bio: "Dave Davis is a seasoned entrepreneurial operator known for scaling startups and optimizing execution. He brings operational rigor, strategic insight, and high-growth experience to MedPACT.",
+    id: "dave-davis",
   },
   {
     name: "Terrence Duckett",
     title: "Chief Strategy and Marketing Officer",
     bio: "Terrence Duckett is a distinguished healthcare strategist with deep expertise in payer partnerships, market development, and system integration. He shapes MedPACT's long-term strategy and market expansion.",
+    id: "terrence-duckett",
   },
   {
     name: "Robert Ostovich",
     title: "Director of Sales",
     bio: "Robert brings over 30 years of enterprise-wide healthcare sales experience, specializing in solutions that transform organizational profitability through technology-driven innovation.",
+    id: "robert-ostovich",
   },
   {
     name: "Dr. Jason Bacharach",
     title: "Medical Director",
     bio: "A highly experienced medical leader with extensive expertise in helping corporations refine healthcare delivery, optimize clinical pathways, and strengthen operational outcomes across complex systems.",
+    id: "jason-bacharach",
   },
   {
     name: "Bill Williams",
     title: "Executive Advisor",
     bio: "Bill Williams provides strategic guidance in corporate governance, financial structuring, and enterprise relationships to support MedPACT's accelerated growth.",
+    id: "bill-williams",
   },
   {
     name: "Lindsay Saddic",
     title: "Communications Director",
     bio: "Lindsay Saddic manages executive operations, organizational coordination, and communication workflows across MedPACT's cross-functional teams.",
+    id: "lindsay-saddic",
   },
 ];
 
@@ -54,10 +64,17 @@ const advisors: Advisor[] = [
   {
     name: "Dr. Scott Edmonds",
     bio: "Dr. Edmonds is a seasoned clinician–entrepreneur with deep experience advising emerging healthcare companies and guiding innovations that improve practice economics and patient access.",
+    id: "scott-edmonds",
   },
   {
     name: "Julia Lee",
     bio: "Julia Lee is an expert in practice optimization and network development. She has advised leading ophthalmology practices and AAO members on efficiency, workflow integration, and revenue integrity.",
+    id: "julia-lee",
+  },
+  {
+    name: "Brian Murphy",
+    bio: "Brian Murphy is a Strategy Advisor with extensive experience in product messaging, go-to-market strategy, and enterprise sales. He helps MedPACT refine market positioning and accelerate revenue growth.",
+    id: "brian-murphy",
   },
 ];
 
@@ -94,10 +111,8 @@ export default function AboutPage() {
               key={leader.name}
               className="flex gap-4 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm"
             >
-              {/* Picture window */}
-              <div className="h-20 w-20 flex-shrink-0 rounded-2xl bg-gray-100 border border-dashed border-gray-300 flex items-center justify-center text-xs text-gray-400">
-                Photo
-              </div>
+              {/* Picture window with upload */}
+              <ImageUpload personId={leader.id} personName={leader.name} />
 
               <div>
                 <h3 className="text-lg font-semibold">{leader.name}</h3>
@@ -125,10 +140,8 @@ export default function AboutPage() {
               key={advisor.name}
               className="flex gap-4 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm"
             >
-              {/* Picture window */}
-              <div className="h-20 w-20 flex-shrink-0 rounded-2xl bg-gray-100 border border-dashed border-gray-300 flex items-center justify-center text-xs text-gray-400">
-                Photo
-              </div>
+              {/* Picture window with upload */}
+              <ImageUpload personId={advisor.id} personName={advisor.name} />
 
               <div>
                 <h3 className="text-lg font-semibold">{advisor.name}</h3>
