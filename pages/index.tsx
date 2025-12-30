@@ -13,18 +13,27 @@ import { Check, BarChart3, ShieldCheck, Zap, Cpu, DollarSign, Activity, ArrowRig
 
 export default function MedPactRCMLanding() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-gradient-to-br from-blue-50 via-slate-50 to-blue-100">
+      {/* Profitability Banner */}
+      <div className="fixed top-14 left-0 right-0 z-40 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-600 text-white py-3 shadow-lg">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <p className="text-sm md:text-base font-semibold tracking-wide">
+            🎯 Our goal for you is 30% increase in profitability over 3 years
+          </p>
+        </div>
+      </div>
+
       {/* Clean Apple-Style Nav */}
-      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/80 border-b border-gray-100">
+      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/90 border-b border-blue-100/50">
         <div className="mx-auto max-w-[1200px] px-6 h-14 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="font-semibold text-xl tracking-tight text-gray-900">MedPact RCM</div>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm">
-            <a href="#platform" className="text-gray-600 hover:text-gray-900 transition">Platform</a>
-            <a href="#innovation" className="text-gray-600 hover:text-gray-900 transition">Innovation</a>
-            <a href="#outcomes" className="text-gray-600 hover:text-gray-900 transition">Outcomes</a>
-            <a href="/about" className="text-gray-600 hover:text-gray-900 transition">About</a>
+            <a href="#platform" className="text-gray-700 hover:text-gray-900 transition">Platform</a>
+            <a href="#innovation" className="text-gray-700 hover:text-gray-900 transition">Innovation</a>
+            <a href="#outcomes" className="text-gray-700 hover:text-gray-900 transition">Outcomes</a>
+            <a href="/about" className="text-gray-700 hover:text-gray-900 transition">About</a>
           </div>
           <Button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-sm font-medium shadow-sm">
             Get Started
@@ -33,14 +42,14 @@ export default function MedPactRCMLanding() {
       </nav>
 
       {/* Apple-Style Hero */}
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-44 pb-20 px-6">
         <div className="mx-auto max-w-[980px] text-center">
           <h1 className="text-5xl md:text-7xl font-semibold tracking-tight text-gray-900 leading-[1.05] mb-6">
             Maximizing Profitability.
             <br />
             Innovation. Value.
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 font-normal max-w-[720px] mx-auto leading-relaxed mb-8">
+          <p className="text-xl md:text-2xl text-gray-800 font-normal max-w-[720px] mx-auto leading-relaxed mb-8">
             MedPact RCM transforms healthcare revenue cycle management through intelligent automation, 
             delivering measurable results that matter.
           </p>
@@ -54,7 +63,7 @@ export default function MedPactRCMLanding() {
             </Button>
           </div>
 
-          <div className="flex flex-wrap gap-6 justify-center text-sm text-gray-500">
+          <div className="flex flex-wrap gap-6 justify-center text-sm text-gray-700">
             <div className="flex items-center gap-2">
               <Check className="h-4 w-4 text-blue-600" />
               <span>30% Revenue Improvement</span>
@@ -74,19 +83,19 @@ export default function MedPactRCMLanding() {
       {/* Hero Visual */}
       <section className="pb-20 px-6">
         <div className="mx-auto max-w-[1200px]">
-          <div className="rounded-3xl bg-gradient-to-br from-blue-50 to-indigo-50 p-8 md:p-12 shadow-2xl shadow-gray-200/50 border border-gray-100">
+          <div className="rounded-3xl bg-white/80 backdrop-blur-sm p-8 md:p-12 shadow-xl shadow-blue-200/30 border border-blue-100/50">
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 { icon: DollarSign, title: "Revenue Intelligence", desc: "Real-time pricing transparency and optimization", color: "blue" },
                 { icon: Zap, title: "Workflow Automation", desc: "AI-driven process automation at scale", color: "indigo" },
                 { icon: BarChart3, title: "Performance Analytics", desc: "Executive dashboards with actionable insights", color: "blue" },
               ].map((item) => (
-                <div key={item.title} className="bg-white rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300">
+                <div key={item.title} className="bg-white rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300 border border-blue-100/50">
                   <div className={`h-12 w-12 rounded-xl bg-${item.color}-100 flex items-center justify-center mb-4`}>
                     <item.icon className={`h-6 w-6 text-${item.color}-600`} />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-gray-800 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -95,13 +104,13 @@ export default function MedPactRCMLanding() {
       </section>
 
       {/* Three Pillars - Apple Style */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white/50 backdrop-blur-sm">
         <div className="mx-auto max-w-[1200px] px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900 mb-4">
               Built on three principles
             </h2>
-            <p className="text-xl text-gray-600 max-w-[600px] mx-auto">
+            <p className="text-xl text-gray-800 max-w-[600px] mx-auto">
               Every feature designed to maximize your practice's potential
             </p>
           </div>
@@ -127,15 +136,15 @@ export default function MedPactRCMLanding() {
                 features: ["HIPAA compliant", "CMS audit-ready", "Integrated platform", "Proven results"]
               }
             ].map((pillar) => (
-              <div key={pillar.title} className="bg-white rounded-3xl p-8 hover:shadow-xl transition-shadow duration-300">
+              <div key={pillar.title} className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 hover:shadow-xl transition-shadow duration-300 border border-blue-100/50">
                 <div className="h-14 w-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6">
                   <pillar.icon className="h-7 w-7 text-blue-600" />
                 </div>
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">{pillar.title}</h3>
-                <p className="text-gray-600 leading-relaxed mb-6">{pillar.desc}</p>
+                <p className="text-gray-800 leading-relaxed mb-6">{pillar.desc}</p>
                 <ul className="space-y-3">
                   {pillar.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2 text-sm text-gray-700">
+                    <li key={feature} className="flex items-center gap-2 text-sm text-gray-800">
                       <Check className="h-4 w-4 text-blue-600 flex-shrink-0" />
                       <span>{feature}</span>
                     </li>
@@ -148,13 +157,13 @@ export default function MedPactRCMLanding() {
       </section>
 
       {/* Platform Features - Clean Grid */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 bg-white/30 backdrop-blur-sm">
         <div className="mx-auto max-w-[1200px]">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900 mb-4">
               Complete RCM platform
             </h2>
-            <p className="text-xl text-gray-600 max-w-[600px] mx-auto">
+            <p className="text-xl text-gray-800 max-w-[600px] mx-auto">
               Everything you need to transform your revenue cycle, all in one place
             </p>
           </div>
@@ -182,12 +191,12 @@ export default function MedPactRCMLanding() {
                 features: ["Executive analytics", "Payer performance", "Contract optimization"]
               }
             ].map((feature) => (
-              <div key={feature.title} className="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+              <div key={feature.title} className="group bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-blue-200/50 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600 mb-6">{feature.desc}</p>
+                <p className="text-gray-800 mb-6">{feature.desc}</p>
                 <ul className="space-y-2">
                   {feature.features.map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-sm text-gray-700">
+                    <li key={item} className="flex items-center gap-2 text-sm text-gray-800">
                       <div className="h-1.5 w-1.5 rounded-full bg-blue-600" />
                       <span>{item}</span>
                     </li>
@@ -200,14 +209,14 @@ export default function MedPactRCMLanding() {
       </section>
 
       {/* Results Section */}
-      <section className="py-20 bg-gray-50 px-6">
+      <section className="py-20 bg-white/50 backdrop-blur-sm px-6">
         <div className="mx-auto max-w-[1200px]">
-          <div className="bg-white rounded-3xl p-12 md:p-16 shadow-xl">
+          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-12 md:p-16 shadow-xl border border-blue-100/50">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900 mb-4">
                 Results that speak for themselves
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-gray-800">
                 Real outcomes from real healthcare organizations
               </p>
             </div>
@@ -215,15 +224,15 @@ export default function MedPactRCMLanding() {
             <div className="grid md:grid-cols-3 gap-12 mb-12">
               <div className="text-center">
                 <div className="text-5xl md:text-6xl font-semibold text-blue-600 mb-2">30%</div>
-                <div className="text-gray-600">Profitability improvement over 3 years</div>
+                <div className="text-gray-800">Profitability improvement over 3 years</div>
               </div>
               <div className="text-center">
                 <div className="text-5xl md:text-6xl font-semibold text-blue-600 mb-2">95%+</div>
-                <div className="text-gray-600">First-pass claims accuracy</div>
+                <div className="text-gray-800">First-pass claims accuracy</div>
               </div>
               <div className="text-center">
                 <div className="text-5xl md:text-6xl font-semibold text-blue-600 mb-2">40%</div>
-                <div className="text-gray-600">Faster AR collections</div>
+                <div className="text-gray-800">Faster AR collections</div>
               </div>
             </div>
 
@@ -238,7 +247,7 @@ export default function MedPactRCMLanding() {
       </section>
 
       {/* Quick Navigation */}
-      <section className="py-16 px-6">
+      <section className="py-16 px-6 bg-white/30 backdrop-blur-sm">
         <div className="mx-auto max-w-[1200px]">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-semibold text-gray-900 mb-4">Explore MedPact RCM</h2>
@@ -256,16 +265,16 @@ export default function MedPactRCMLanding() {
               <a
                 key={link.href}
                 href={link.href}
-                className="group flex items-center gap-4 p-6 rounded-2xl bg-white border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all duration-300"
+                className="group flex items-center gap-4 p-6 rounded-2xl bg-white/80 backdrop-blur-sm border border-blue-200/50 hover:border-blue-300 hover:shadow-md transition-all duration-300"
               >
-                <div className="h-12 w-12 rounded-xl bg-gray-100 group-hover:bg-blue-100 flex items-center justify-center transition-colors">
-                  <link.icon className="h-6 w-6 text-gray-600 group-hover:text-blue-600 transition-colors" />
+                <div className="h-12 w-12 rounded-xl bg-blue-50 group-hover:bg-blue-100 flex items-center justify-center transition-colors">
+                  <link.icon className="h-6 w-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900 mb-1">{link.title}</div>
-                  <div className="text-sm text-gray-600">{link.desc}</div>
+                  <div className="text-sm text-gray-800">{link.desc}</div>
                 </div>
-                <ChevronRight className="h-5 w-5 text-gray-400 group-hover:text-blue-600 ml-auto group-hover:translate-x-1 transition-all" />
+                <ChevronRight className="h-5 w-5 text-gray-500 group-hover:text-blue-600 ml-auto group-hover:translate-x-1 transition-all" />
               </a>
             ))}
           </div>
@@ -273,19 +282,19 @@ export default function MedPactRCMLanding() {
       </section>
 
       {/* Clean Apple-Style Footer */}
-      <footer className="border-t border-gray-200 bg-white py-12">
+      <footer className="border-t border-blue-100/50 bg-white/80 backdrop-blur-sm py-12">
         <div className="mx-auto max-w-[1200px] px-6">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div>
               <div className="font-semibold text-lg text-gray-900 mb-4">MedPact RCM</div>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-sm text-gray-800 leading-relaxed">
                 Maximizing profitability, innovation, and value for healthcare practices.
               </p>
             </div>
             
             <div>
               <h4 className="text-gray-900 font-semibold mb-4">Platform</h4>
-              <ul className="space-y-2 text-sm text-gray-600">
+              <ul className="space-y-2 text-sm text-gray-700">
                 <li><a href="/platform" className="hover:text-blue-600 transition">Overview</a></li>
                 <li><a href="/outcomes" className="hover:text-blue-600 transition">Results</a></li>
                 <li><a href="/innovations" className="hover:text-blue-600 transition">Technology</a></li>
@@ -294,7 +303,7 @@ export default function MedPactRCMLanding() {
             
             <div>
               <h4 className="text-gray-900 font-semibold mb-4">Company</h4>
-              <ul className="space-y-2 text-sm text-gray-600">
+              <ul className="space-y-2 text-sm text-gray-700">
                 <li><a href="/about" className="hover:text-blue-600 transition">About Us</a></li>
                 <li><a href="/mission" className="hover:text-blue-600 transition">Mission</a></li>
                 <li><a href="/contact" className="hover:text-blue-600 transition">Contact</a></li>
@@ -303,7 +312,7 @@ export default function MedPactRCMLanding() {
             
             <div>
               <h4 className="text-gray-900 font-semibold mb-4">Resources</h4>
-              <ul className="space-y-2 text-sm text-gray-600">
+              <ul className="space-y-2 text-sm text-gray-700">
                 <li><a href="/book-demo" className="hover:text-blue-600 transition">Book Demo</a></li>
                 <li><a href="/become-user" className="hover:text-blue-600 transition">Become a Client</a></li>
                 <li><a href="/become-partner" className="hover:text-blue-600 transition">Partners</a></li>
@@ -311,9 +320,9 @@ export default function MedPactRCMLanding() {
             </div>
           </div>
           
-          <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-gray-500">© {new Date().getFullYear()} MedPact Inc. All rights reserved.</p>
-            <div className="flex items-center gap-6 text-sm text-gray-500">
+          <div className="pt-8 border-t border-blue-100/50 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-sm text-gray-700">© {new Date().getFullYear()} MedPact Inc. All rights reserved.</p>
+            <div className="flex items-center gap-6 text-sm text-gray-700">
               <a href="#" className="hover:text-gray-900 transition">Privacy</a>
               <a href="#" className="hover:text-gray-900 transition">Terms</a>
               <a href="#" className="hover:text-gray-900 transition">Security</a>
