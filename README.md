@@ -1,11 +1,52 @@
 # MedPACT RCM Website
 
+> **🎯 This website is also a professional corporate website template!**  
+> See [TEMPLATE_SUMMARY.md](TEMPLATE_SUMMARY.md) to create new websites from this template in 30 minutes.
+
+---
+
 ## Overview
 MedPact RCM is an intelligence-driven revenue cycle platform that unifies pricing transparency, payer intelligence, workflow automation, compliance, and analytics into a single operating layer — replacing fragmented tools and manual processes.
 
 **Mission**: Fix execution where private equity struggled — turning complex operational and financial data into action.
 
 **Value Proposition**: Healthcare practices lose profitability to payment leakage, labor inefficiency, and disconnected data. MedPact delivers up to 30% profitability improvement over 3 years, starting with near-term cash lift and compounding into durable EBITDA.
+
+---
+
+## 🚀 Template System
+
+This website serves as a **reusable template** for creating professional corporate websites:
+
+### Quick Start (New Website in 30 Minutes)
+```bash
+# Automated setup
+./create-new-site.sh "Company Name" "folder-name"
+
+# Manual setup
+cp -r "MedPACT RCM Website" "../New Company"
+cd "../New Company"
+npm install
+# Edit config/branding.ts
+npm run dev
+```
+
+### Template Documentation
+- **[TEMPLATE_SUMMARY.md](TEMPLATE_SUMMARY.md)** - Complete overview & value proposition
+- **[QUICK_START.md](QUICK_START.md)** - 5-minute setup guide
+- **[TEMPLATE_GUIDE.md](TEMPLATE_GUIDE.md)** - Comprehensive technical documentation
+- **[TEMPLATE_EXAMPLES.md](TEMPLATE_EXAMPLES.md)** - 6 industry-specific examples
+- **[config/branding.example.ts](config/branding.example.ts)** - Configuration template
+
+### Industry Examples Included
+✅ FinTech (PayFlow Solutions)  
+✅ Law Firm (Sterling & Associates)  
+✅ SaaS Marketing (GrowthMetrics)  
+✅ Healthcare Clinic (Wellness Partners)  
+✅ Real Estate (Skyline Properties)  
+✅ Healthcare Tech (MedPACT RCM - this site)
+
+---
 
 ## Tech Stack
 - **Framework**: Next.js 14.0.0 (Pages Router)
