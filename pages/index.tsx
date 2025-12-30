@@ -2,169 +2,311 @@ import React from "react";
 import { Button } from "../components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
-import { Check, BarChart3, ShieldCheck, Mic, Cpu, DollarSign, Activity, ArrowRight, Building2, Lock, Server } from "lucide-react";
+import { Check, BarChart3, ShieldCheck, Mic, Cpu, DollarSign, Activity, ArrowRight, Building2, Lock, Server, ChevronRight, Star } from "lucide-react";
 
 /**
- * MedPact RCM – Single-file landing page
- * Stack: Next.js 14 App Router, Tailwind CSS, shadcn/ui, Lucide icons, Framer Motion
- * Brand: blue / green / black (black for nav buttons). Bold button style by default.
- * Notes: Replace logo src with MedPact mark. Wire to /api/contact or CRM of choice.
+ * MedPact RCM – Fortune 100 Premium Landing Page
+ * Luxury UI for High Net Worth Healthcare Management
+ * Brand: Deep navy, champagne gold, platinum accents
+ * Typography: Sophisticated serif headings, clean sans body
  */
 
 export default function MedPactRCMLanding() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 text-slate-900 dark:text-slate-100">
-      {/* Top Announcement */}
-      <div className="w-full bg-gradient-to-r from-cyan-600 to-emerald-600 text-white text-center text-sm py-2">CONFIDENTIAL & BUSINESS RESTRICTED</div>
+    <main className="min-h-screen bg-slate-950 text-slate-100">
+      {/* Premium Top Bar */}
+      <div className="w-full bg-gradient-to-r from-amber-900/20 via-amber-800/10 to-amber-900/20 border-b border-amber-700/20 text-amber-200 text-center text-xs tracking-[0.3em] uppercase py-3 font-light">
+        Private & Confidential — For Qualified Clients Only
+      </div>
 
-      {/* Nav */}
-      <nav className="sticky top-0 z-50 backdrop-blur bg-white/70 dark:bg-slate-900/70 border-b border-slate-200 dark:border-slate-800">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="h-8 w-8 rounded-full bg-gradient-to-br from-cyan-500 to-emerald-500" />
-            <span className="font-bold text-lg tracking-tight">MedPact <span className="text-slate-500">RCM</span></span>
+      {/* Premium Nav */}
+      <nav className="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/90 border-b border-slate-800/50">
+        <div className="mx-auto max-w-[1400px] px-8 h-20 flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <div className="h-10 w-10 rounded-sm bg-gradient-to-br from-amber-600 via-amber-500 to-amber-700 shadow-lg shadow-amber-900/50" />
+            <div>
+              <div className="font-serif text-2xl tracking-tight text-amber-100">MedPact</div>
+              <div className="text-[10px] tracking-[0.2em] uppercase text-slate-400 -mt-1">Revenue Management</div>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
-            <Button className="rounded-2xl px-4 py-2 font-semibold bg-gradient-to-r from-cyan-600 to-emerald-600">
-              Book a Demo
+          <div className="flex items-center gap-6">
+            <a href="#services" className="text-sm text-slate-300 hover:text-amber-200 transition tracking-wide">Services</a>
+            <a href="#expertise" className="text-sm text-slate-300 hover:text-amber-200 transition tracking-wide">Expertise</a>
+            <a href="#insights" className="text-sm text-slate-300 hover:text-amber-200 transition tracking-wide">Insights</a>
+            <Button className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-slate-950 font-semibold px-6 py-2 shadow-lg shadow-amber-900/30 border border-amber-500/50">
+              Private Consultation
             </Button>
           </div>
         </div>
       </nav>
 
-      {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-10 items-center">
-          <div>
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Fix Execution Where Private Equity Struggled:
-              <span className="block bg-clip-text text-transparent bg-gradient-to-r from-cyan-600 to-emerald-600"> Turn Data Into Action</span>
-            </h1>
-            <p className="mt-5 text-lg text-slate-600 dark:text-slate-300 max-w-xl">
-              Healthcare practices lose profitability to payment leakage, labor inefficiency, and disconnected data. 
-              MedPact fixes execution — delivering up to 30% profitability improvement over 3 years.
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Badge className="bg-cyan-600">HIPAA-ready</Badge>
-              <Badge className="bg-emerald-600">FHIR-aware</Badge>
-              <Badge className="bg-slate-800">JWT Security</Badge>
-            </div>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a href="/book-demo">
-                <Button size="lg" className="rounded-2xl px-6 py-6 text-base font-bold bg-gradient-to-r from-cyan-600 to-emerald-600">
-                  Get a Live Demo <ArrowRight className="ml-2 h-5 w-5" />
+      {/* Premium Hero */}
+      <section className="relative overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+        {/* Elegant background pattern */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-950/20 via-slate-950 to-slate-950" />
+        <div className="absolute inset-0" style={{backgroundImage: 'radial-gradient(circle at 1px 1px, rgb(148 163 184 / 0.05) 1px, transparent 0)', backgroundSize: '40px 40px'}} />
+        
+        <div className="relative mx-auto max-w-[1400px] px-8 py-24 lg:py-32">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-950/30 border border-amber-700/30 text-amber-200 text-xs tracking-widest uppercase mb-8">
+                <Star className="h-3 w-3" />
+                Fortune 100 Excellence
+              </div>
+              
+              <h1 className="font-serif text-5xl md:text-7xl font-light leading-[1.1] tracking-tight">
+                Precision Wealth
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-amber-400 font-normal mt-2">
+                  Healthcare Management
+                </span>
+              </h1>
+              
+              <div className="mt-8 h-px w-24 bg-gradient-to-r from-amber-600 to-transparent" />
+              
+              <p className="mt-8 text-xl text-slate-300 font-light leading-relaxed max-w-xl">
+                Exclusive revenue cycle optimization for high-net-worth medical practices. 
+                Delivering 30%+ profitability improvement through proprietary intelligence and white-glove execution.
+              </p>
+              
+              <div className="mt-10 flex flex-wrap gap-4">
+                <div className="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-900/50 border border-slate-800">
+                  <ShieldCheck className="h-5 w-5 text-amber-500" />
+                  <span className="text-sm text-slate-300">Bank-Grade Security</span>
+                </div>
+                <div className="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-900/50 border border-slate-800">
+                  <Lock className="h-5 w-5 text-amber-500" />
+                  <span className="text-sm text-slate-300">HIPAA Compliant</span>
+                </div>
+                <div className="flex items-center gap-3 px-4 py-2 rounded-lg bg-slate-900/50 border border-slate-800">
+                  <Star className="h-5 w-5 text-amber-500" />
+                  <span className="text-sm text-slate-300">Concierge Service</span>
+                </div>
+              </div>
+              
+              <div className="mt-12 flex flex-col sm:flex-row gap-4">
+                <a href="/book-demo">
+                  <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-slate-950 font-semibold px-8 py-6 text-base shadow-2xl shadow-amber-900/50 border border-amber-500/50">
+                    Schedule Private Consultation
+                    <ChevronRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </a>
+                <Button size="lg" variant="outline" className="w-full sm:w-auto border-slate-700 text-slate-200 hover:bg-slate-900 hover:text-amber-200 px-8 py-6 text-base">
+                  View Executive Summary
                 </Button>
-              </a>
-              <Button size="lg" variant="outline" className="rounded-2xl px-6 py-6 text-base font-bold border-slate-300">
-                Download One-Pager
-              </Button>
+              </div>
+              
+              <div className="mt-12 pt-8 border-t border-slate-800">
+                <p className="text-sm italic text-slate-400 font-light">
+                  "Where private equity execution meets institutional precision. Not consulting — partnership."
+                </p>
+              </div>
             </div>
-            <p className="mt-4 text-base font-semibold">"Private equity scaled ownership — but struggled to scale execution. MedPact fixes that."</p>
-            <p className="mt-2 text-sm text-slate-500">We turn complex operational and financial data into action across payment yield, labor productivity, payer strategy, and capacity utilization. Not reports — results.</p>
-          </div>
-          <div className="relative">
-            <div className="rounded-3xl border border-slate-200 dark:border-slate-800 p-6 bg-white/70 dark:bg-slate-900/70 shadow-xl">
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  { icon: DollarSign, title: "Price Transparency", copy: "Real-time CMS-compliant pricing & estimates." },
-                  { icon: BarChart3, title: "RCM Analytics", copy: "Real-time KPIs, payer performance, margins." },
-                  { icon: ShieldCheck, title: "Compliance Layer", copy: "CMS, HIPAA audit-ready, always-on." },
-                  { icon: Cpu, title: "Workflow Automation", copy: "Rules-driven follow-ups & task orchestration." },
-                ].map((f) => (
-                  <Card key={f.title} className="rounded-2xl">
-                    <CardHeader className="pb-1">
-                      <CardTitle className="flex items-center gap-2 text-base">
-                        <f.icon className="h-5 w-5 text-emerald-600" /> {f.title}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="text-sm text-slate-600 dark:text-slate-300">{f.copy}</CardContent>
-                  </Card>
-                ))}
+            
+            <div className="relative">
+              <div className="rounded-2xl border border-slate-800/50 p-8 bg-gradient-to-br from-slate-900/90 to-slate-950/90 backdrop-blur shadow-2xl">
+                <div className="grid grid-cols-2 gap-6">
+                  {[
+                    { icon: DollarSign, title: "Revenue Intelligence", copy: "Proprietary pricing analytics & forecasting", color: "amber" },
+                    { icon: BarChart3, title: "Executive Analytics", copy: "Real-time portfolio performance insights", color: "amber" },
+                    { icon: ShieldCheck, title: "Compliance Assurance", copy: "Continuous regulatory monitoring", color: "amber" },
+                    { icon: Cpu, title: "Automation Suite", copy: "AI-driven workflow orchestration", color: "amber" },
+                  ].map((f) => (
+                    <div key={f.title} className="group rounded-xl p-6 bg-slate-950/50 border border-slate-800/50 hover:border-amber-700/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-900/20">
+                      <f.icon className="h-8 w-8 text-amber-500 mb-4 group-hover:scale-110 transition-transform" />
+                      <h3 className="text-base font-semibold text-slate-200 mb-2">{f.title}</h3>
+                      <p className="text-sm text-slate-400 leading-relaxed">{f.copy}</p>
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="mt-8 pt-6 border-t border-slate-800/50">
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="text-slate-400">Trusted by</span>
+                    <span className="text-amber-400 font-semibold">500+ Elite Practices</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Quick Links: Two-column button matrix */}
-      <section id="quicklinks" className="py-8">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-3">
-            {/* Column A */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              {[
-                { href: "/mission", label: "Mission" },
-                { href: "/platform", label: "Platform" },
-                { href: "/outcomes", label: "Outcomes" },
-                { href: "/innovations", label: "Innovations" },
-                { href: "/payer-provider", label: "Provider↔Payer" },
-                { href: "/about", label: "About Us" },
-              ].map((b, i) => (
-                <a key={i} href={b.href} className="px-4 py-3 rounded-2xl text-sm font-semibold bg-black text-white text-center hover:opacity-90 transition">{b.label}</a>
-              ))}
+      {/* Premium Quick Links */}
+      <section id="quicklinks" className="py-16 bg-slate-900 border-y border-slate-800">
+        <div className="mx-auto max-w-[1400px] px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-3xl text-slate-200 mb-3">Explore Our Capabilities</h2>
+            <div className="h-px w-16 bg-gradient-to-r from-transparent via-amber-600 to-transparent mx-auto" />
+          </div>
+          
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {[
+              { href: "/mission", label: "Our Mission", desc: "Strategic Vision" },
+              { href: "/platform", label: "Platform", desc: "Technology Suite" },
+              { href: "/outcomes", label: "Outcomes", desc: "Proven Results" },
+              { href: "/innovations", label: "Innovations", desc: "Proprietary IP" },
+              { href: "/payer-provider", label: "Intelligence", desc: "Market Insights" },
+              { href: "/about", label: "Leadership", desc: "Expert Team" },
+            ].map((item) => (
+              <a 
+                key={item.href} 
+                href={item.href}
+                className="group p-6 rounded-lg bg-slate-950/50 border border-slate-800 hover:border-amber-700/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-900/20"
+              >
+                <div className="text-slate-200 font-semibold mb-1 group-hover:text-amber-400 transition">{item.label}</div>
+                <div className="text-xs text-slate-500 tracking-wide">{item.desc}</div>
+                <ChevronRight className="h-4 w-4 text-slate-600 mt-2 group-hover:text-amber-500 group-hover:translate-x-1 transition-all" />
+              </a>
+            ))}
+          </div>
+          
+          <div className="mt-8 grid md:grid-cols-3 gap-4">
+            {[
+              { href: "/contact", label: "Contact Us", desc: "Get in Touch" },
+              { href: "/become-user", label: "Become a Client", desc: "Exclusive Access" },
+              { href: "/become-partner", label: "Partnership", desc: "Strategic Alliance" },
+            ].map((item) => (
+              <a 
+                key={item.href} 
+                href={item.href}
+                className="group p-6 rounded-lg bg-gradient-to-br from-amber-950/20 to-amber-900/10 border border-amber-700/30 hover:border-amber-600/50 transition-all duration-300 hover:shadow-lg hover:shadow-amber-900/30"
+              >
+                <div className="text-amber-200 font-semibold mb-1 group-hover:text-amber-100 transition">{item.label}</div>
+                <div className="text-xs text-amber-400/60 tracking-wide">{item.desc}</div>
+                <ChevronRight className="h-4 w-4 text-amber-600 mt-2 group-hover:text-amber-400 group-hover:translate-x-1 transition-all" />
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Institutional-Grade Problem / Solution */}
+      <section id="solution" className="py-20 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div className="mx-auto max-w-[1400px] px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl text-slate-200 mb-4">The Executive Challenge</h2>
+            <div className="h-px w-24 bg-gradient-to-r from-transparent via-amber-600 to-transparent mx-auto mb-6" />
+            <p className="text-slate-400 text-lg max-w-2xl mx-auto font-light">
+              High-performing practices demand institutional-grade financial infrastructure
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
+            {/* Problem Card */}
+            <div className="rounded-2xl p-8 bg-gradient-to-br from-red-950/20 to-slate-950 border border-red-900/30">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="h-12 w-12 rounded-lg bg-red-950/50 border border-red-800/50 flex items-center justify-center">
+                  <Activity className="h-6 w-6 text-red-500" />
+                </div>
+                <h3 className="font-serif text-2xl text-slate-200">Systemic Deficiencies</h3>
+              </div>
+              
+              <ul className="space-y-4">
+                {[
+                  { title: "Revenue Leakage", desc: "Payment inaccuracy from fragmented coding and billing systems" },
+                  { title: "Operational Inefficiency", desc: "Labor-intensive manual processes impeding scalability" },
+                  { title: "Data Fragmentation", desc: "Disconnected systems preventing strategic insights" },
+                  { title: "Execution Gap", desc: "Private equity scale without operational excellence" },
+                ].map((item) => (
+                  <li key={item.title} className="flex items-start gap-4 p-4 rounded-lg bg-slate-950/50 border border-slate-800/50">
+                    <div className="h-2 w-2 rounded-full bg-red-500 mt-2 flex-shrink-0" />
+                    <div>
+                      <div className="text-slate-300 font-semibold mb-1">{item.title}</div>
+                      <div className="text-sm text-slate-500 font-light">{item.desc}</div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
             </div>
-            {/* Column B */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              {[
-                { href: "/contact", label: "Contact" },
-                { href: "/become-user", label: "Become a User" },
-                { href: "/become-partner", label: "Become a Partner" },
-              ].map((b, i) => (
-                <a key={i} href={b.href} className="px-4 py-3 rounded-2xl text-sm font-semibold bg-gradient-to-r from-cyan-600 to-emerald-600 text-white text-center hover:opacity-90 transition">{b.label}</a>
-              ))}
+            
+            {/* Solution Card */}
+            <div className="rounded-2xl p-8 bg-gradient-to-br from-amber-950/20 to-slate-950 border border-amber-800/30">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="h-12 w-12 rounded-lg bg-amber-950/50 border border-amber-700/50 flex items-center justify-center">
+                  <Check className="h-6 w-6 text-amber-500" />
+                </div>
+                <h3 className="font-serif text-2xl text-slate-200">Institutional Solution</h3>
+              </div>
+              
+              <ul className="space-y-4">
+                {[
+                  { title: "Intelligence-Driven Actions", desc: "Transform complex data into strategic profitability levers" },
+                  { title: "Revenue Protection", desc: "Eliminate leakage through AI-assisted optimization" },
+                  { title: "Workflow Excellence", desc: "Automate processes to achieve institutional efficiency" },
+                  { title: "Unified Intelligence", desc: "Single platform integrating all financial operations" },
+                ].map((item) => (
+                  <li key={item.title} className="flex items-start gap-4 p-4 rounded-lg bg-slate-950/50 border border-slate-800/50 hover:border-amber-700/50 transition-colors">
+                    <Check className="h-5 w-5 text-amber-500 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <div className="text-slate-200 font-semibold mb-1">{item.title}</div>
+                      <div className="text-sm text-slate-400 font-light">{item.desc}</div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              
+              <div className="mt-8 pt-6 border-t border-amber-900/30">
+                <div className="flex items-center justify-between">
+                  <span className="text-slate-400 text-sm">Performance Guarantee</span>
+                  <span className="text-amber-400 text-xl font-semibold">30% Improvement</span>
+                </div>
+                <p className="text-xs text-slate-500 mt-2 font-light">Over 36 months — Near-term cash lift to durable EBITDA</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-12 text-center">
+            <div className="inline-block rounded-xl p-8 bg-slate-950/50 border border-slate-800">
+              <p className="text-lg italic text-slate-300 font-light max-w-3xl">
+                "Private equity achieved ownership scale but struggled with operational precision. 
+                MedPact delivers institutional-grade execution where others failed."
+              </p>
+              <div className="mt-4 h-px w-16 bg-amber-600 mx-auto" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* The Problem / Solution */}
-      <section id="solution" className="py-14">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-start">
-          <Card className="rounded-3xl">
-            <CardHeader>
-              <CardTitle className="text-2xl">The Problem</CardTitle>
-            </CardHeader>
-            <CardContent className="text-slate-600 dark:text-slate-300">
-              <ul className="space-y-3">
-                {[
-                  "Payment leakage from inaccurate coding and missed charges",
-                  "Labor inefficiency — staff buried in manual processes",
-                  "Disconnected data — payment accuracy, productivity, infrastructure don't talk",
-                  "Private equity scaled ownership but struggled to scale execution",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3"><Activity className="h-5 w-5 mt-0.5 text-cyan-600" /> {item}</li>
-                ))}
+      {/* Premium Footer */}
+      <footer className="border-t border-slate-800 bg-slate-950 py-12">
+        <div className="mx-auto max-w-[1400px] px-8">
+          <div className="grid md:grid-cols-3 gap-12 mb-12">
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="h-8 w-8 rounded-sm bg-gradient-to-br from-amber-600 via-amber-500 to-amber-700" />
+                <div className="font-serif text-xl text-amber-100">MedPact</div>
+              </div>
+              <p className="text-sm text-slate-400 font-light leading-relaxed">
+                Institutional-grade revenue cycle management for America's most successful healthcare practices.
+              </p>
+            </div>
+            
+            <div>
+              <h4 className="text-amber-200 font-semibold mb-4 tracking-wide">Services</h4>
+              <ul className="space-y-2 text-sm text-slate-400">
+                <li><a href="/platform" className="hover:text-amber-300 transition">Platform Overview</a></li>
+                <li><a href="/outcomes" className="hover:text-amber-300 transition">Performance Results</a></li>
+                <li><a href="/innovations" className="hover:text-amber-300 transition">Proprietary Technology</a></li>
               </ul>
-            </CardContent>
-          </Card>
-          <Card className="rounded-3xl border-emerald-200/50">
-            <CardHeader>
-              <CardTitle className="text-2xl">Our Solution</CardTitle>
-            </CardHeader>
-            <CardContent className="text-slate-600 dark:text-slate-300">
-              <ul className="space-y-3">
-                {[
-                  "Turn data into action across payment yield, labor productivity, payer strategy",
-                  "Fix payment leakage with AI-assisted coding and charge capture",
-                  "Eliminate labor inefficiency through workflow automation",
-                  "Connect operational and financial data into one intelligence layer",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3"><Check className="h-5 w-5 mt-0.5 text-emerald-600" /> {item}</li>
-                ))}
+            </div>
+            
+            <div>
+              <h4 className="text-amber-200 font-semibold mb-4 tracking-wide">Company</h4>
+              <ul className="space-y-2 text-sm text-slate-400">
+                <li><a href="/about" className="hover:text-amber-300 transition">Leadership Team</a></li>
+                <li><a href="/contact" className="hover:text-amber-300 transition">Contact Us</a></li>
+                <li><a href="#" className="hover:text-amber-300 transition">Privacy Policy</a></li>
               </ul>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="border-t border-slate-200 dark:border-slate-800 py-8">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-slate-500">© {new Date().getFullYear()} MedPact Inc. All rights reserved.</p>
-          <div className="flex items-center gap-4 text-sm text-slate-500">
-            <a href="#" className="hover:text-slate-900 dark:hover:text-white">Privacy</a>
-            <a href="#" className="hover:text-slate-900 dark:hover:text-white">Security</a>
-            <a href="#" className="hover:text-slate-900 dark:hover:text-white">Contact</a>
+            </div>
+          </div>
+          
+          <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-sm text-slate-500 font-light">© {new Date().getFullYear()} MedPact Inc. All rights reserved. Confidential and Proprietary.</p>
+            <div className="flex items-center gap-6 text-xs text-slate-500 tracking-wide">
+              <a href="#" className="hover:text-amber-400 transition">Securities</a>
+              <a href="#" className="hover:text-amber-400 transition">Compliance</a>
+              <a href="#" className="hover:text-amber-400 transition">Terms</a>
+            </div>
           </div>
         </div>
       </footer>
