@@ -29,3 +29,6 @@ coverage/
 *.css
 *.js
 /deploy.yml
+node_modules/
+.next/
+public/team-photos/
