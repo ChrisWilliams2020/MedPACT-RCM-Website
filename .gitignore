@@ -24,11 +24,11 @@ yarn-error.log*
 *.local
 coverage/
 
-# Static site build
-*.html
-*.css
-*.js
-/deploy.yml
-node_modules/
-.next/
+# User uploaded files
 public/team-photos/
+
+# Ignore all JS files EXCEPT config files
+*.js
+!next.config.js
+!postcss.config.js
+!tailwind.config.js
