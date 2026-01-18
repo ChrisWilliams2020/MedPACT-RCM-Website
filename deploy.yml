@@ -1,0 +1,7 @@
+# Example deploy.yml for MedPACT RCM Website
+version: '1.0'
+steps:
+  - name: Build
+    run: echo "Building MedPACT RCM Website..."
+  - name: Deploy
+    run: echo "Deploying MedPACT RCM Website..."
